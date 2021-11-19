@@ -5,11 +5,135 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #303030;
-  color: #FFFFFF;
+  background-color: RGB(6,21,36) !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+p {
+  font-size: 1.25rem;
+}
+.punk-font {
+  font-size: 2rem;
+}
+.Punks-Evolved-container {
+  min-height: 37.5rem;
+  background: url('./Banner 2 reduced.jpg') no-repeat top center;
+  background-size: cover;
+}
+.roadmap {
+  width: 100%;
+  max-width: 50rem;
+}
+.stay-involved {
+  height: 100%;
+  height: 43.75rem;
+  background: url('./Web Banner 1 reduced.jpg') no-repeat center center;
+  background-size: cover;
+}
+.stay-involved p {
+  font-size: 1.5rem;
+}
+.socials {
+  min-height: 500px;
+}
+.jitb-style-btn {
+  height: 75px;
+  font-size: 1.5rem;
+  width: 300px;
+  text-align: center;
+  justify-content: center;
+}
+.progress {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.mint-input {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.mint-section-icons {
+  z-index: 2;
+  padding: 3px 1rem;
+}
+.header-section {
+  height: 100%;
+  max-height: 1200px;
+  min-height: 1000px;
+  background: url('./bg.png') no-repeat top center;
+  background-size: cover;
+}
+.logo {
+  height: 100%;
+  min-height: 400px;
+  max-height: 800px;
+  left: 0;
+}
+.zin-1 {
+  z-index: 1;
+}
+.js-font {
+  min-width: 300px;
+  max-height: 800px;
+  z-index: 2;
+}
+.js-font img {
+  font-family: 'Baskerville Old Face' !important;
+  color: #ad0000;
+  text-align: center;
+}
+.preview-gif {
+  max-height: 300px;
+  max-width: 300px;
+}
+.logo img {
+  object-fit: cover;
+}
+svg {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  margin: 5px;
+}
+.collage-img {
+  min-height: 360px;
+  min-width: 360px;
+  max-width: 1200px;
+}
+.nft-percent {
+  z-index: 5;
+  color: #000;
+  background-color: transparent;
+}
+.bg-blood {
+  background-color: #ad0000;
+}
+
+@media screen and (max-width: 1000px) {
+  .mint-section-box,
+  .header-section,
+  .logo-xl {
+    height: 100%;
+    min-height: 800px;
+    max-height: 1200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mint-section-box,
+  .header-section,
+  .logo-xl {
+    height: 100%;
+    min-height: 600px;
+    max-height: 1200px;
+  }
+  .header-section {
+    background: url('./Mobile Banner minting top.png') no-repeat top center;
+    background-size: cover;
+  }
+  p {
+    font-size: 1.15rem;
+  }
 }
