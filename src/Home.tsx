@@ -322,6 +322,7 @@ const Home = (props: HomeProps) => {
             src={
               'https://cdn.discordapp.com/attachments/905542266549047336/911107140347895808/Road_Map_png.png'
             }
+            alt='roadmap'
           />
         </div>
         {/* Punks Evolved */}
