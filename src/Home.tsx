@@ -222,7 +222,7 @@ const Home = (props: HomeProps) => {
                       ) : (
                         <Countdown
                           date={startDate}
-                          onMount={({completed}) =>
+                          onMount={({completed}:any) =>
                             completed && setIsActive(true)
                           }
                           onComplete={() => setIsActive(true)}
