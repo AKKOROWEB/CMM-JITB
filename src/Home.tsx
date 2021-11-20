@@ -381,28 +381,19 @@ const Home = (props: HomeProps) => {
               <strong>How much does a punk cost?</strong>
             </p>
 
-            <p>The baseline minting cost of Jack In The Blocks is 0.06 ETH</p>
-
-            <p>
-              Owning 1 Punks Evolved = 0.055 Mint
-              <br />
-              Owning 4 Punks Evolved = 0.050 Mint <br />
-              Owning 7 Punks Evolved = 0.045 Mint{' '}
-            </p>
-
             <p>
               <strong>What Framework Are Jack In The Blocks built on?</strong>
             </p>
-            <p>Jack In The Blocks are built on the ERC-721 standard</p>
+            <p>Jack In The Blocks are built with Metaplex Candy Machine</p>
 
-            <p>
+            {/* <p>
               <strong>Where can I view my newly minted Jack?</strong>
             </p>
             <p>
               You can view your Jack on Opensea.io or any compatible NFT viewing
               metric– We will provide a link to Opensea and from there navigate
               to view “My Profile”
-            </p>
+            </p> */}
 
             <p>
               <strong>Is every Jack truly unique?</strong>
@@ -445,11 +436,11 @@ const Home = (props: HomeProps) => {
             align-itens-center px-3  px-md-5 py-5`}>
           <div
             className={`d-flex flex-column flex-md-row justify-content-around align-items-center`}>
-            <a
+            {/* <a
               className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
               href={'https://opensea.io/collection/jackintheblocks'}>
               Opensea
-            </a>
+            </a> */}
             <a
               className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
               href={'https://punksevolved.io/'}>
