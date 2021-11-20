@@ -203,7 +203,7 @@ const Home = (props: HomeProps) => {
 
                 {wallet && <p>Remaining: {itemsRemaining}</p>}
 
-                {wallet && <p>Price: 0.75</p>}
+                {wallet && <p>Price: 0.75 SOL</p>}
 
                 <MintContainer>
                   {!wallet ? (
