@@ -83,7 +83,7 @@ const Home = (props: HomeProps) => {
     })();
   };
 
-    const onMint = async () => {
+  const onMint = async () => {
     try {
       setIsMinting(true);
       if (wallet && candyMachine?.program) {
@@ -98,32 +98,32 @@ const Home = (props: HomeProps) => {
           mintTxId,
           props.txTimeout,
           props.connection,
-          "singleGossip",
+          'singleGossip',
           false
         );
 
         if (!status?.err) {
           setAlertState({
             open: true,
-            message: "Congratulations! Mint succeeded!",
-            severity: "success",
+            message: 'Congratulations! Mint succeeded!',
+            severity: 'success',
           });
         } else {
           setAlertState({
             open: true,
-            message: "Mint failed! Please try again!",
-            severity: "error",
+            message: 'Mint failed! Please try again!',
+            severity: 'error',
           });
         }
       }
-    } catch (error: any) {
+    } catch (error) {
       // TODO: blech:
-      let message = error.msg || "Minting failed! Please try again!";
+      let message = error.msg || 'Minting failed! Please try again!';
       if (!error.msg) {
-        if (error.message.indexOf("0x138")) {
-        } else if (error.message.indexOf("0x137")) {
+        if (error.message.indexOf('0x138')) {
+        } else if (error.message.indexOf('0x137')) {
           message = `SOLD OUT!`;
-        } else if (error.message.indexOf("0x135")) {
+        } else if (error.message.indexOf('0x135')) {
           message = `Insufficient funds to mint. Please fund your wallet.`;
         }
       } else {
@@ -138,7 +138,7 @@ const Home = (props: HomeProps) => {
       setAlertState({
         open: true,
         message,
-        severity: "error",
+        severity: 'error',
       });
     } finally {
       if (wallet) {
@@ -150,12 +150,11 @@ const Home = (props: HomeProps) => {
     }
   };
 
-
   useEffect(() => {
     (async () => {
       console.log(wallet);
       if (wallet) {
-         console.log(wallet);
+        console.log(wallet);
         const balance = await props.connection.getBalance(wallet.publicKey);
         setBalance(balance / LAMPORTS_PER_SOL);
       }
@@ -185,7 +184,7 @@ const Home = (props: HomeProps) => {
               className={`h-100 w-100`}
               alt=''
             />
-            { (
+            {
               <div className='container mint-input d-flex flex-column justify-content-center align-items-center p-3 border border-dark w-100 my-4'>
                 {wallet && (
                   <p>
@@ -211,7 +210,9 @@ const Home = (props: HomeProps) => {
                   ) : (
                     <MintButton
                       disabled={isSoldOut || isMinting || !isActive}
-                      onClick={()=>{onMint()}}
+                      onClick={() => {
+                        onMint();
+                      }}
                       variant='contained'>
                       {isSoldOut ? (
                         'SOLD OUT'
@@ -224,7 +225,7 @@ const Home = (props: HomeProps) => {
                       ) : (
                         <Countdown
                           date={startDate}
-                          onMount={({completed}:any) =>
+                          onMount={({completed}: any) =>
                             completed && setIsActive(true)
                           }
                           onComplete={() => setIsActive(true)}
@@ -246,7 +247,7 @@ const Home = (props: HomeProps) => {
                   </Alert>
                 </Snackbar>
               </div>
-            )}
+            }
 
             <div className='container d-flex flex-column justify-content-center align-items-center p-3 border border-dark w-100 my-4'>
               <p>{itemsRedeemed}/2978 Minted</p>
@@ -371,18 +372,20 @@ const Home = (props: HomeProps) => {
               <strong>How can I purchase a Jack?</strong>
             </p>
             <p>
-              Connect your wallet to the website and select the amount you wish
-              to mint, we’ve limited it to 5 at a time to avoid bot attacks when
-              possible – once you’ve entered the amount, hit mint and approve in
-              Metamask and it’s as simple as that!
+              Connect Your Wallet To The Website with phantom wallet and hit
+              mint and approve - It’s As Simple As That!
             </p>
 
             <p>
               <strong>How much does a punk cost?</strong>
             </p>
 
+            <p>0.75 SOL</p>
+
             <p>
-              <strong>What Framework Are Jack In The Blocks built on?</strong>
+              <strong>
+                What Tools/Frameworks Are Jack In The Blocks built with?
+              </strong>
             </p>
             <p>Jack In The Blocks are built with Metaplex Candy Machine</p>
 
