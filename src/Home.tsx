@@ -322,7 +322,7 @@ const Home = (props: HomeProps) => {
           <img
             className={`text-center roadmap mx-auto mb-5`}
             src={
-              'https://cdn.discordapp.com/attachments/905542266549047336/911107140347895808/Road_Map_png.png'
+              'https://cdn.discordapp.com/attachments/905542266549047336/911798346631487498/Road_Map_png.png'
             }
             alt='roadmap'
           />
@@ -339,9 +339,9 @@ const Home = (props: HomeProps) => {
               privileges as well as discounts to every project under our
               umbrella.
             </p>
-            <p>Owning 1 Punk = 0.055 Mint For Jack In The Blocks</p>
+            {/* <p>Owning 1 Punk = 0.055 Mint For Jack In The Blocks</p>
             <p>Owning 4 Punks = 0.050 Mint For Jack In The Blocks</p>
-            <p>Owning 7 Punks = 0.045 Mint For Jack In The Blocks</p>
+            <p>Owning 7 Punks = 0.045 Mint For Jack In The Blocks</p> */}
             <div
               className={`d-flex flex-column flex-md-row justify-content-start align-items-center`}>
               <a
