@@ -202,7 +202,7 @@ const Home = (props: HomeProps) => {
 
                 {wallet && <p>Remaining: {itemsRemaining}</p>}
 
-                {wallet && <p>Price: 0.75 SOL</p>}
+                {wallet && <p>Price: 0.33 SOL</p>}
 
                 <MintContainer>
                   {!wallet ? (
@@ -380,14 +380,14 @@ const Home = (props: HomeProps) => {
               <strong>How much does a punk cost?</strong>
             </p>
 
-            <p>0.75 SOL</p>
+            <p>0.33 SOL</p>
 
             <p>
               <strong>
                 What Tools/Frameworks Are Jack In The Blocks built with?
               </strong>
             </p>
-            <p>Jack In The Blocks are built with Metaplex Candy Machine</p>
+            <p>Jack In The  Blocks are built with Metaplex Candy Machine</p>
 
             {/* <p>
               <strong>Where can I view my newly minted Jack?</strong>
