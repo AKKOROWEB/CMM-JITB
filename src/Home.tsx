@@ -202,7 +202,7 @@ const Home = (props: HomeProps) => {
 
                 {wallet && <p>Remaining: {itemsRemaining}</p>}
 
-                {wallet && <p>Price: 0.33 SOL</p>}
+                {wallet && <p>Price: 0.165 SOL</p>}
 
                 <MintContainer>
                   {!wallet ? (
@@ -311,7 +311,7 @@ const Home = (props: HomeProps) => {
           <img
             className={`text-center roadmap mx-auto mb-5`}
             src={
-              'https://cdn.discordapp.com/attachments/905542266549047336/911798346631487498/Road_Map_png.png'
+              'https://cdn.discordapp.com/attachments/905542266549047336/918680020178841680/Road_Map_png.png'
             }
             alt='roadmap'
           />
