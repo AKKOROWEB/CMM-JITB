@@ -291,18 +291,6 @@ const Home = (props: HomeProps) => {
             immediate and incredible rewards – congratulations in advance to
             whoever is lucky enough to pull these one of ones.
           </p>
-
-          <p>
-            Punks Evolved will be halted at 1,000 mints, and owning a punk
-            before launch guarantees you to be whitelisted to the presale, as
-            well as receive a discount upon minting for owning quantities of
-            either 1, 4 or 7 Punks Evolved. Jack In the Blocks is the showcase
-            that promises on the quality we promised with Punks for our
-            dedication to 3D generative NFTs, which we firmly believe is an
-            inevitable future in both the NFT realm, and asset generation as a
-            whole.
-          </p>
-
           <p>
             Thank you for both your support in Punks Evolved and Jack In The
             Blocks, and we couldn’t be more excited to have you a part of our
@@ -350,11 +338,6 @@ const Home = (props: HomeProps) => {
                 href={'https://punksevolved.io/'}>
                 Mint a Punk
               </a>
-              <a
-                className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
-                href={'https://opensea.io/collection/evolvedpunks'}>
-                Opensea
-              </a>
             </div>
           </div>
         </div>
@@ -389,14 +372,6 @@ const Home = (props: HomeProps) => {
             </p>
             <p>Jack In The  Blocks are built with Metaplex Candy Machine</p>
 
-            {/* <p>
-              <strong>Where can I view my newly minted Jack?</strong>
-            </p>
-            <p>
-              You can view your Jack on Opensea.io or any compatible NFT viewing
-              metric– We will provide a link to Opensea and from there navigate
-              to view “My Profile”
-            </p> */}
 
             <p>
               <strong>Is every Jack truly unique?</strong>
@@ -428,7 +403,7 @@ const Home = (props: HomeProps) => {
             </p>
             <a
               className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 p-4`}
-              href={'http://discord.gg/c73a3danSJ'}>
+              href={'http://discord.gg/s99MhhmttM'}>
               Join Discord
             </a>
           </div>
