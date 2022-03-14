@@ -169,8 +169,38 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-      {/* STYLING */}
+      <style>
+        {`
+          .fnt-color-main {
+            color: #ef4116;
+          }
+          .bg-color-main {
+            background-color: #ef4116;
+          }
 
+          @media screen and (max-width: 576px) {
+            .roadmap {
+              min-height: 37rem;
+            }
+          }
+          .w-90 {
+            width: 70% !important;
+          }
+          .h-90 {
+            height: 70% !important;
+          }
+          .icon-size {
+            max-width: 400px;
+            max-height: 400px;
+            width: 100%;
+            height: 100%;
+          }
+          .mw-360 {
+            max-width: 360px;
+          }
+        `}
+      </style>
+      {/* STYLING */}
       <div
         className={`d-flex flex-column justify-content-center mx-auto text-white`}>
         {/* HEADER */}
@@ -301,17 +331,19 @@ const Home = (props: HomeProps) => {
         </div>
         {/* ROADMAP */}
         <div
-          className={`container  d-flex flex-column justify-content-center
-            align-itens-center px-3  px-md-5 py-5`}>
+          className={`roadmap mx-auto d-flex flex-row justify-content-center
+            align-items-center`}>
           <img
-            src={'/RoadMap_Interactive LightMix.png'}
+            className={`text-center w-100 h-100 d-flex d-lg-none`}
+            src={
+              'https://cdn.discordapp.com/attachments/905542266549047336/946346356396675102/Roadmap_squared_optimized_for_mobile.png'
+            }
             alt='roadmap'
-            className='img-fluid mb-5'
           />
           <img
-            className={`text-center roadmap mx-auto mb-5`}
+            className={`text-center w-100 h-100 d-none d-lg-flex`}
             src={
-              'https://cdn.discordapp.com/attachments/905542266549047336/918680020178841680/Road_Map_png.png'
+              'https://cdn.discordapp.com/attachments/905542266549047336/946346425292316682/Roadmap_Banner_optimized_and_clipped_for_web.png'
             }
             alt='roadmap'
           />
@@ -328,9 +360,7 @@ const Home = (props: HomeProps) => {
               privileges as well as discounts to every project under our
               umbrella.
             </p>
-            {/* <p>Owning 1 Punk = 0.055 Mint For Jack In The Blocks</p>
-            <p>Owning 4 Punks = 0.050 Mint For Jack In The Blocks</p>
-            <p>Owning 7 Punks = 0.045 Mint For Jack In The Blocks</p> */}
+
             <div
               className={`d-flex flex-column flex-md-row justify-content-start align-items-center`}>
               <a
@@ -370,8 +400,7 @@ const Home = (props: HomeProps) => {
                 What Tools/Frameworks Are Jack In The Blocks built with?
               </strong>
             </p>
-            <p>Jack In The  Blocks are built with Metaplex Candy Machine</p>
-
+            <p>Jack In The Blocks are built with Metaplex Candy Machine</p>
 
             <p>
               <strong>Is every Jack truly unique?</strong>
@@ -389,23 +418,6 @@ const Home = (props: HomeProps) => {
               You can contact any of our administrators in our Discord if you
               run into any issues! We’re always here to help
             </p>
-          </div>
-        </div>
-        {/* STAY INVOLVED */}
-        <div
-          className={`container-fluid stay-involved d-flex flex-column justify-content-center
-            align-itens-center px-3  px-md-5 py-5`}>
-          <div className={`d-flex flex-column col-md-6`}>
-            <h3 className={`punk-font mb-5`}>Stay Involved</h3>
-            <p>
-              Community is everything in NFTs and we’d love to have you as part
-              of ours! Join our Discords to stay up to date with both projects!
-            </p>
-            <a
-              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 p-4`}
-              href={'http://discord.gg/s99MhhmttM'}>
-              Join Discord
-            </a>
           </div>
         </div>
         {/* SOCIALS*/}
@@ -428,6 +440,11 @@ const Home = (props: HomeProps) => {
               className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
               href={'https://twitter.com/JacksInTheBlock'}>
               Twitter
+            </a>
+            <a
+              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 p-4`}
+              href={'http://discord.gg/s99MhhmttM'}>
+              Discord
             </a>
           </div>
         </div>
