@@ -355,18 +355,15 @@ const Home = (props: HomeProps) => {
           <div className={`d-flex flex-column  col-md-6 `}>
             <h1 className={`punk-font mb-5`}>Punks Evolved?</h1>
             <p>
-              The first project in our ecosystem and the backbone to Jacks and
-              what’s to come. Owning a Punks Evolved will grant you whitelist
-              privileges as well as discounts to every project under our
-              umbrella.
+              Punks Evolved is the Genesis project to all things 3D in our family of projects - it's the one that started it all and our premium airdrop pass to all things 3D
             </p>
 
             <div
               className={`d-flex flex-column flex-md-row justify-content-start align-items-center`}>
               <a
                 className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
-                href={'https://punksevolved.io/'}>
-                Mint a Punk
+                href={'https://www.magiceden.io/marketplace/punks_evolved'}>
+                Magic Eden
               </a>
             </div>
           </div>
@@ -393,7 +390,7 @@ const Home = (props: HomeProps) => {
               <strong>How much does a punk cost?</strong>
             </p>
 
-            <p>0.33 SOL</p>
+            <p>0.165 SOL</p>
 
             <p>
               <strong>
