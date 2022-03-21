@@ -387,7 +387,7 @@ const Home = (props: HomeProps) => {
             </p>
 
             <p>
-              <strong>How much does a punk cost?</strong>
+              <strong>How much does a Jack cost?</strong>
             </p>
 
             <p>0.165 SOL</p>
