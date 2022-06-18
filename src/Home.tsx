@@ -232,7 +232,7 @@ const Home = (props: HomeProps) => {
 
                 {wallet && <p>Remaining: {itemsRemaining}</p>}
 
-                {wallet && <p>Price: 0.165 SOL</p>}
+                {wallet && <p>Price: 0 SOL</p>}
 
                 <MintContainer>
                   {!wallet ? (
